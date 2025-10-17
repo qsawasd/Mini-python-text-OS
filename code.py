@@ -23,7 +23,6 @@ def Login():
             time.sleep(2)
             print("Login successful!")
             logged_in = True
-            break
         else:
             time.sleep(2)
             print("Invalid username or password. Please try again.\n")
@@ -33,20 +32,18 @@ def signout():
         time.sleep(2)
         print("Signed out!")
         logged_in = False
-        break
     else:
         print("Logout canceled")
-        break
 
 
 ## Apps
 def Credits():
     print("Human creators:\n - Wesley Burkholder\n\nNon-human resources:\n - Bing Copilot\n - Github\n")
-    break
 
 
 ## Main Program
 while True:
+    time.sleep(3)
     Login()
     while logged_in == True:
         print("What app would you like to use?")
